@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Callback function</title>
+</head>
+<body>
+    <h1>Callback technique</h1>
+    <p id="res"></p>
+    <script>
+        async function add(a,b){
+            let response = await a*b;
+            display(response)
+        }
+        function display(some){
+            document.getElementById("res").innerHTML = some
+        }
+        add(99,1909)
+    </script>
+</body>
+</html>
